@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="refresh" content="3">
+    <meta name="Author" content="Lekhotla">
+    <meta name="keyword" content="Molecule login">
+    <title>Login</title>
+    <link rel="icon" href='icons/Molecule icon.png'>
+
+
+    <link rel="stylesheet" href="CSS/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <!-- <script src="sweetalert2/dist/sweetalert2.all.min.js"></script> -->
+ 
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script> -->
+
+<link rel="stylesheet" href="sweetalert2/sweetalert2.min.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="form_container">
+
+            <h1 id="page-title">Login</h1>
+
+            <div id="logo">
+                <img src="images/school_logo.png" alt="School logo">
+            </div>
+
+            <form id="loginForm">
+                <ul class="center_list">
+
+                    <li>
+
+                        <div class="input_field">
+
+                            <img src="icons/man-user.svg" alt="Username icon" id="user-icon" >
+
+                            <input type="text" id="Username" name="username" required>
+                            <label for="username">Username</label>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="input_field">
+
+                            <img src="icons/lock icon.svg" alt="Lock icon" class="lock_icon">
+
+                            <input type="password" id="Password" name="password" required>
+                            <label for="password">Password</label>
+                            
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div id="submit-button">
+                    <input type="submit" value="Login" class="full_button"  name="submitButton">
+
+                </div>
+            </form>
+
+            <div id="new_user">
+                <a href="#" class="highlight">New user</a>
+            </div>
+
+            <div class="forgotten_info">
+
+                <ul>
+                    <li>
+                        <a href="changePassForm.html">Change password</a>
+                    </li>
+                    <li>
+                        <div class="vertical_line"></div>
+                    </li>
+                    <li>
+                        <a href="#">Forgot password</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div id="main_footer">
+            <div id="powered_by_molecule">
+                Powered By Molecule
+            </div>
+            <div class="author_acknowledgement">Icons made by
+                <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+                <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="sweetalert2/sweetalert2.min.js"></script>
+    <!-- <script type="text/javascript">
+        function validate() {
+            var username = 'Lee';
+            var password = '12345';
+
+            var userName = document.getElementById('Username').value;
+            var passWord = document.getElementById('Password').value;
+            
+            if((username == userName) && (password == passWord)) {
+                swal("Nice","You logged in","Succeddful");
+                return true;
+            }else{
+                 
+                    swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Username or password doesnt match',
+                    footer: '<a href>Why do I have this issue?</a>'
+                    })
+                    return false;
+            }
+        }
+    </script> -->
+    <script src="JS/login.js"></script>
+</body>
+
+</html>

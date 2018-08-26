@@ -1,0 +1,293 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #636363;
+    font-weight: bold;
+}
+
+nav {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+form {
+    padding: none;
+    margin: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    font-size: 0.9em;
+    margin-top: 40px;
+    color: #fff;
+    background-color: #3b3b3b;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+}
+
+form ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#new_user {
+    text-align: center;
+}
+
+#main_nav {
+    background-color: #3b3b3b;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main_nav a {
+    margin: 0;
+    margin-left: 2%;
+}
+
+#main_nav a img {
+    width: 45px;
+    height: 45px;
+}
+
+.form_container {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_container #logo img {
+    display: block;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_container form label{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    font-size: 1.5em;
+    color: rgb(121, 121, 121);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.center_list {
+    text-align: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input_field {
+    width: 95%;
+    margin-bottom: 30px;
+    margin-right: 0;
+    position: relative;
+    left: 15px;
+}
+
+.input_field img {
+    margin: 0px 10px;
+    width: 22px;
+    position: absolute;
+    top: 1.75em;
+    left: 0.4em;
+}
+
+.input_field input {
+    height: 45px;
+    width: 470px;
+    border: 0;
+    border-bottom: 1.2px #ccc solid;
+    font-family: 'Nunito sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    background: transparent;
+    -webkit-transition: border 0.4s ease-in-out;
+    transition: border 0.4s ease-in-out;
+    margin-top: 10px;
+}
+
+.input_field input:focus {
+    outline: 0;
+    border-bottom: 1.2px solid rgb(71, 212, 90);
+
+}
+.input_field input:valid ~label,
+.input_field input:focus ~ label{
+    top: -12px;
+    color: rgb(3, 185, 28);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#submit-button {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="password" i] {
+    -webkit-text-security: disc !important;
+}
+
+input[type="submit"] {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    font-size: 1.8rem;
+    background-color: rgb(71, 212, 90);
+    color: #fff;
+    margin-bottom: 20px;
+    border: 0;
+    -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+    transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #3b3b3b;
+    -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.highlight {
+    color: #599999;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.highlight:hover {
+    color: #3d579e;
+}
+
+.forgotten_info {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.forgotten_info ul {
+    list-style: none;
+    align-self: center;
+    position: relative;
+}
+
+.forgotten_info ul li {
+    display: inline-block;
+}
+
+.forgotten_info ul li a{
+    margin: 0;
+    margin: 0 10px;
+}
+
+.forgotten_info ul li a:hover {
+    color: #599999;
+}
+
+.vertical_line {
+    height: 15px;
+    width: 0px;
+    border-right: 1px black solid;
+    position: absolute;
+    top: 3px;
+}
+
+#powered_by_molecule{
+    
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* For mobile responsiveness */
+
+@media only screen and (max-width:768px){
+
+    .form_container{
+        width: 80%;
+    }
+    .form_container #logo img {
+    
+        margin-top: 30px;
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    #submit-button{
+        width: 80%;
+    }
+   
+    .forgotten_info{
+        font-size: .8em;
+    }
+
+    .forgotten_info a{
+        padding: 10px;
+    }
+
+    .forgotten_info ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .vertical_line{
+        display: none;
+    }
+
+    .input_field{
+        width: 100%;
+    }
+
+    .center_list{
+        width:80%;
+    }
+
+    .input_field input{
+        width: 80%;
+        height: 22.5px;
+        font-size: .9em;
+
+    }
+
+    .input_field img {
+        margin: 0px 10px;
+        width: 22px;
+        position: absolute;
+        top: 0.8em;
+        left: -1.3em;
+    }
+
+    .form_container form label {
+        font-size: 1em;
+    }
+
+}
