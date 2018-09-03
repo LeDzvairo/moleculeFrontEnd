@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="refresh" content="10">
+        <meta name="Author" content="Lekhotla">
+        <link rel="stylesheet" href="dashboard.css">
+        <title>Dashboard</title>
+</head>
+<body>
+    <aside>
+            <img src="images\Killua_close_up.png" alt="profile picture">
+            <div id="sidebar_name">Name</div>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Marksheets</a></li>
+                <li><a href="#">Academic support</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Sign out</a></li>
+            </ul>
+    </aside>
+
+    <main>
+        <div class="grid">
+            <div id="Post-assignment">
+                    <table border="1">
+                            <thead><tr><th>Post Assignments</th></tr></thead>
+                            <tbody>
+                            <tr><td>
+                                <form action="#" method="post">
+                                    <div class="row">
+                                        <label for="Due-date">Date/time:</label>
+                                        <input type="datetime-local" id="Due-date"
+                                               name="Due-date" value="2018-06-12T19:30"
+                                               min="2018-09-02T00:00" max="2018-12-1T00:00" /></div>
+
+                                    <div class="row">
+                                        <label for="subject-list">Subject:</label>
+                                        <select name="subject-list">
+                                                <option value="subject-1">Subject 1</option>
+                                                <option value="subject-2">Subject 2</option>
+                                              </select>
+                                    </div>
+                                    <div class="row">
+                                        <label for="Title">Title:</label>
+                                        <input type="text" name="Title" id="assignment-title">
+                                    </div>
+                                    <div class="row">
+                                        <textarea name="Description" id="Assignment description" cols="45" rows="10" placeholder="Assignment description ..."></textarea></div>
+                                    <div class="row"><input type="submit" value="Post"></div>
+                                </form>
+                        </td></tr>
+                        </tbody>
+                        </table>
+            </div>
+            <div id="Post-notice">
+                <table>
+                    <thead><tr><th>Post Notice</th></tr></thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td><div class="nrow">
+                                <label for="Notice title">Notice title:</label>
+                                <input type="text" name="Notice title" id="noticeTitle"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    <label for="subject-list">Subject</label>
+                                    <select name="subject-list">
+                                            <option value="subject-1">Subject 1</option>
+                                            <option value="subject-2">Subject 2</option>
+                                          </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot><tr><td><a href="#">Continue ...</a></td></tr></tfoot>
+                </table>
+            </div>
+
+            <div id="Subjects">
+                    <table border="1">
+                        <thead><tr><th>Subjects</th></tr></thead>
+                        <tbody>
+                            <tr><td>Subject 1  <a href="#"><img src="icons/right-arrow.svg" alt="Right pointing arrow"></a></td></tr>
+                            <tr><td>Subject 2  <a href="#"><img src="icons/right-arrow.svg" alt="Right pointing arrow"></a></td></tr>
+                        </tbody>
+                        <tfoot><tr><td><a href="#">More...</a></td></tr></tfoot>
+                    </table>
+               </div>
+
+            <div id="Notices">
+                    <table border="1">
+                        <thead><tr><th>Notices</th></tr></thead>
+                        <tbody>
+                            <tr><td>Notice 1</td></tr>
+                            <tr><td>Notice 2</td></tr>
+                        </tbody>
+                        <tfoot><tr><td><a href="#">More...</a></td></tr></tfoot>
+                    </table>
+               </div>
+
+               <div id="Contacts">
+                    <table border="1">
+                        <thead><tr><th>School contact details</th></tr></thead>
+                        <tbody>
+                            <tr><td>Email: example@school.com</td></tr>
+                            <tr><td>Phone number: 0123456789</td></tr>
+                        </tbody>
+                        <tfoot><tr><td><a href="#">More...</a></td></tr></tfoot>
+                    </table>
+               </div>
+
+            <div id="Events">
+                <table>
+                    <thead><tr><th>Events</th></tr></thead>
+                    <tbody>
+                        
+                        <tr><td>Event 1</td></tr>
+                        <tr><td>Event 2</td></tr>
+                        <tr><td>Event 3</td></tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr><td><a href="#">More...</a></td></tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
