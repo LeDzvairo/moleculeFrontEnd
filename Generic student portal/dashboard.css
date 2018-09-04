@@ -6,7 +6,7 @@ body{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     grid-auto-columns: 180px auto;
     grid-gap: 20px;
-    min-width: 1100px;
+    min-width: 1150px;
     width: auto !important;
     width: 1000px;
 }
@@ -56,6 +56,10 @@ textarea{
      resize:none;
  }
 
+ textarea:focus,select:focus,input:focus{
+    outline: none;
+}
+
 table {
     border: 1px solid #c2c2c2;
     border-spacing: 0;
@@ -102,6 +106,19 @@ tfoot td{
      color:#72A8A8;
  }
 
+ input[type=submit]{
+     height: 40px;
+     color: #fff;
+     background-color: #616161;
+     border: 0;
+     width: 100%;
+     font-size: 1.1em;
+     font-weight: bold;
+ }
+
+ input[type=submit]:hover{
+     background-color: #47D45A;
+ }
 
  #Assignments tbody tr:nth-child(odd){
     background-color: #EBF1FF;
@@ -112,13 +129,33 @@ tfoot td{
  }
 
  #Subjects{
-     position: relative;
+    position: relative;
+}
+
+
+#Subjects tbody tr td img{
+    width: 25px;
+   position: absolute;
+   right: 25px;
+}
+
+#TSubjects tbody tr:nth-child(odd){
+    background-color: #DDFFDC;
  }
 
- #Subjects tbody tr td img{
-     width: 25px;
-    position: absolute;
-    right: 25px;
+ #TSubjects{
+     position: relative;
+     margin-top: 2em;
+ }
+
+ #TSubjects tbody tr td img{
+    width: 25px;
+   position: absolute;
+   right: 25px;
+}
+
+#Contacts{
+    margin-top: 2.5em;
 }
 
 #Notices tbody tr:nth-child(odd){
@@ -135,13 +172,71 @@ tfoot td{
     padding: 0px;
 }
 
-#Post-notice table tr td{
+#Post-assignment input[type=datetime-local]{
+    background-color: #616161;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}
+
+#Post-assignment input[type=text]{
+    background-color: #616161;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+    width: 250px;
+}
+
+#Post-assignment select{
+    border : none;
+    margin-left: 15px;
+}
+
+#Post-notice table tbody tr td{
     padding:0;
+}
+
+#Post-notice input[type=text]{
+    width: 210px;
+    border: none;
+    background-color: #81A9FF;
+}
+
+#Post-notice select{
+    border : none;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+#Post-notice table tbody tr td{
+    height: 50px;
+    padding-left: 15px;
+}
+
+#Post-notice table tbody tr:nth-child(odd){
+    background-color: #81A9FF;
+    color: #fff;
+    font-weight: bold;
+}
+
+#Description{
+    height: 200px;
+}
+
+#Description textarea{
+    display: block;
+    width: 95%;
+    padding:10px 0 0 0;
+    height: 90%;
+    border: 0;
+    margin: auto;
+    overflow: auto;
+    
 }
 
 .grid{
     display: grid;
-    grid-template-columns: 8fr 7fr 6fr;
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 2.5em;
 }
 
@@ -150,4 +245,20 @@ tfoot td{
     color:#CF0000;
 }
 
- 
+.row{
+    padding-top: 10px;
+    padding-left: 15px;
+    height: 30px;
+    text-align: left;
+}
+
+.row:nth-child(odd){
+    background-color: #616161;
+    border: 1px solid #707070;
+    color: #fff;
+    font-weight: 550;
+}
+
+.row:nth-child(4){
+    padding: 0;
+}

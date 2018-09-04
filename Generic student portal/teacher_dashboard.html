@@ -47,62 +47,66 @@
                                         <label for="Title">Title:</label>
                                         <input type="text" name="Title" id="assignment-title">
                                     </div>
-                                    <div class="row">
-                                        <textarea name="Description" id="Assignment description" cols="45" rows="10" placeholder="Assignment description ..."></textarea></div>
-                                    <div class="row"><input type="submit" value="Post"></div>
+                                    <div class="row" id="Description">
+                                        <textarea name="Description" id="Assignment description" cols="45" rows="10" placeholder="Assignment description ..."></textarea>
+                                    </div>
+                                    <input type="submit" value="Post">
                                 </form>
                         </td></tr>
                         </tbody>
                         </table>
             </div>
-            <div id="Post-notice">
-                <table>
-                    <thead><tr><th>Post Notice</th></tr></thead>
-                    
-                    <tbody>
-                        <tr>
-                            <td><div class="nrow">
-                                <label for="Notice title">Notice title:</label>
-                                <input type="text" name="Notice title" id="noticeTitle"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                    <label for="subject-list">Subject</label>
-                                    <select name="subject-list">
-                                            <option value="subject-1">Subject 1</option>
-                                            <option value="subject-2">Subject 2</option>
-                                          </select>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tfoot><tr><td><a href="#">Continue ...</a></td></tr></tfoot>
-                </table>
-            </div>
-
-            <div id="Subjects">
-                    <table border="1">
-                        <thead><tr><th>Subjects</th></tr></thead>
+<div>
+                <div id="Post-notice">
+                    <table>
+                        <thead><tr><th>Post Notice</th></tr></thead>
+                        
                         <tbody>
-                            <tr><td>Subject 1  <a href="#"><img src="icons/right-arrow.svg" alt="Right pointing arrow"></a></td></tr>
-                            <tr><td>Subject 2  <a href="#"><img src="icons/right-arrow.svg" alt="Right pointing arrow"></a></td></tr>
+                            <tr>
+                                <td><div class="nrow">
+                                    <label for="Notice title">Notice title:</label>
+                                    <input type="text" name="Notice title" id="noticeTitle"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <label for="subject-list">Subject</label>
+                                        <select name="subject-list">
+                                                <option value="subject-1">Subject 1</option>
+                                                <option value="subject-2">Subject 2</option>
+                                              </select>
+                                </td>
+                            </tr>
                         </tbody>
-                        <tfoot><tr><td><a href="#">More...</a></td></tr></tfoot>
+                        <tfoot><tr><td><a href="#">Continue ...</a></td></tr></tfoot>
                     </table>
-               </div>
-
-            <div id="Notices">
-                    <table border="1">
-                        <thead><tr><th>Notices</th></tr></thead>
-                        <tbody>
-                            <tr><td>Notice 1</td></tr>
-                            <tr><td>Notice 2</td></tr>
-                        </tbody>
-                        <tfoot><tr><td><a href="#">More...</a></td></tr></tfoot>
-                    </table>
-               </div>
-
-               <div id="Contacts">
+                </div>
+    
+                <div id="TSubjects">
+                        <table border="1">
+                            <thead><tr><th>Subjects</th></tr></thead>
+                            <tbody>
+                                <tr><td>Subject 1  <a href="#"><img src="icons/right-arrow.svg" alt="Right pointing arrow"></a></td></tr>
+                                <tr><td>Subject 2  <a href="#"><img src="icons/right-arrow.svg" alt="Right pointing arrow"></a></td></tr>
+                            </tbody>
+                            <tfoot><tr><td><a href="#">More...</a></td></tr></tfoot>
+                        </table>
+                   </div>
+    
+</div>
+            <div>
+                <div id="Notices">
+                        <table border="1">
+                            <thead><tr><th>Notices</th></tr></thead>
+                            <tbody>
+                                <tr><td>Notice 1</td></tr>
+                                <tr><td>Notice 2</td></tr>
+                            </tbody>
+                            <tfoot><tr><td><a href="#">More...</a></td></tr></tfoot>
+                        </table>
+                   </div>
+                
+                   <div id="Contacts">
                     <table border="1">
                         <thead><tr><th>School contact details</th></tr></thead>
                         <tbody>
@@ -111,7 +115,8 @@
                         </tbody>
                         <tfoot><tr><td><a href="#">More...</a></td></tr></tfoot>
                     </table>
-               </div>
+                </div>
+            </div>
 
             <div id="Events">
                 <table>
